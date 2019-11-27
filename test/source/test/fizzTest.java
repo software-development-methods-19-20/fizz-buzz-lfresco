@@ -27,4 +27,10 @@ public class fizzTest {
     void isBang(){
         assertThat(fizzBuzz.print(7), is( "Bang" ));
     }
+
+    @Test
+    void isBuzzBang() {assertThat(fizzBuzz.print(35), is("BuzzBang"));}
+
+    @Test
+    void isThirtheen() {assertThat(fizzBuzz.print(13), is("13"));}
 }
